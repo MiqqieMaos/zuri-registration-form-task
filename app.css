@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: hsl(0, 100%, 74%);
+  /* background-color: hsl(0, 100%, 74%); */
+  background-image: url("/images/bg-intro-desktop.png");
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+.text-section {
+  padding: 40px 60px;
+  align-items: center;
+}
+.text-section h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  color: #fefefe;
+}
+.text-section p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #fefefe;
+}
+.form-section {
+  padding: 40px 60px;
+  display: grid;
+  row-gap: 1rem;
+}
+.form-section > button {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(248, 32%, 49%);
+  color: #fefefe;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 1px -1px hsl(249, 10%, 26%);
+  cursor: pointer;
+}
+.form-section > button:hover {
+  background-color: hsl(248, 29%, 58%);
+}
+form {
+  display: grid;
+  grid-auto-columns: 380px;
+  grid-auto-rows: minmax(50px, auto);
+  row-gap: 1rem;
+  border-radius: 2%;
+  box-shadow: 0 5px 2px -1px hsl(249, 10%, 26%);
+  background-color: #fefefe;
+  padding: 30px;
+}
+form input {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+form button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: hsl(154, 46%, 62%);
+}
+
+#form-footer {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 25px;
+  color: hsl(246, 25%, 77%);
+}
+#form-footer > a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+
+.red{
+    border-color: hsl(0, 100%, 74%);
+}
+/* */
+
+/*? MEDIA QUERY */
+@media  (max-width: 375px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("/images/bg-intro-mobile.png");
+    /* width: 375px; */
+  }
+  /* main{
+
+  } */
+  .wrapper {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+      }
+      .text-section {
+        
+        /* padding: 20px ; */
+        align-items: center;
+      }
+      .text-section h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 40px;
+        color: #fefefe;
+      }
+      .text-section p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 30px;
+        color: #fefefe;
+        text-align: center;
+      }
+      .form-section {
+        padding: 30px;
+        display: grid;
+        row-gap: 1rem;
+      }
+      /* .form-section > button {
+        font-family: "Poppins", sans-serif;
+        background-color: hsl(248, 32%, 49%);
+        color: #fefefe;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 1px -1px hsl(249, 10%, 26%);
+        cursor: pointer;
+      } */
+      form {
+        display: grid;
+        grid-auto-columns: 250px;
+        grid-auto-rows: minmax(50px, auto);
+        row-gap: 1rem;
+        border-radius: 2%;
+        box-shadow: 0 5px 2px -1px hsl(249, 10%, 26%);
+        background-color: #fefefe;
+        padding: 30px;
+      }
+      /* form input {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 5px;
+      } */
+      /* form button {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 5px;
+        background-color: hsl(154, 59%, 51%);
+        border: none;
+        color: #fefefe;
+        cursor: pointer;
+      } */
+      /* #form-footer {
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 25px;
+        color: hsl(246, 25%, 77%);
+      } */
+      /* #form-footer > a {
+        text-decoration: none;
+        color: hsl(0, 100%, 74%);
+      } */
+}
