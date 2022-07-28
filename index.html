@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,39 +30,39 @@
           <button>
             Try it free 7 days <span>then $20/mo. thereafter</span>
           </button>
-          <form action="#">
-            <input
-              type="text"
-              name="fName"
-              placeholder="First Name"
-              id="fName"
-              class="val"
-            />
+          <div class="container">
+            <form id="form" action="#">
 
-            <input
-              type="text"
-              name="lName"
-              placeholder="Last Name"
-              id="lName"
-              class="val"
-            />
+              <div class="input-control">
+                <input type="text" id="firstName" name="firstName" placeholder="First Name">
+                <span class="error"></span>
+              </div>
 
-            <input type="email" name="email" placeholder="Email" id="email" />
+              <div class="input-control">
+                
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+                <span class="error"></span>
+              </div>
 
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              id="password"
-              class="val"
-            />
+              <div class="input-control">
+                
+                <input type="email" id="email" name="email" placeholder="Email Address">
+                <span class="error"></span>
+              </div>
 
-            <button type="submit">CLAIM YOUR FREE TRIAL</button>
-            <p id="form-footer">
-              By clicking this button you are agreeing to our
-              <a href="#">Terms and Services</a>
-            </p>
-          </form>
+              <div class="input-control">
+                
+                <input type="password" id="password" name="password" placeholder="Password">
+                <span class="error"></span>
+              </div>
+
+              <button type="submit">Claim your free trial</button>
+              <p id="form-footer">
+                By clicking this button you are agreeing to our
+                <a href="#">Terms and Services</a>
+              </p>
+            </form>
+          </div>
         </div>
       </section>
     </main>
